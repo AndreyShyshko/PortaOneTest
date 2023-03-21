@@ -7,7 +7,6 @@ const findLetter = () => {
     const wordsArray = inputText.value.split(" ");
     let lettersArray = [];
     let uniqueLetter = '';
-    console.log(wordsArray);
 
     for (const word of wordsArray) {
         if (word !== '') {
@@ -19,8 +18,6 @@ const findLetter = () => {
             }
         }
     }
-
-    console.log(lettersArray);
 
     for (const letter of lettersArray) {
         if (lettersArray.indexOf(letter) === lettersArray.lastIndexOf(letter)) {
